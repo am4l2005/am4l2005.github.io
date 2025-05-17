@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Amal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" data-nav-link>Home</a></li>
+        <li><a href="about.html" data-nav-link class="active">About</a></li>
+        <li><a href="experience.html" data-nav-link>Experience</a></li>
+        <li><a href="projects.html" data-nav-link>Projects</a></li>
+        <li><a href="testimonials.html" data-nav-link>Testimonials</a></li>
+        <li><a href="contact.html" data-nav-link>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Contact Me</h1>
+      <p>If you’d like to get in touch or collaborate, fill out the form below or send me an email directly.</p>
+      <form action="mailto:am4l.2005z@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+        <label for="name">Your Name</label><br />
+        <input type="text" id="name" name="name" placeholder="Your name" required /><br /><br />
+
+        <label for="email">Your Email</label><br />
+        <input type="email" id="email" name="email" placeholder="Your email" required /><br /><br />
+
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea><br /><br />
+
+        <button type="submit">Send</button>
+      </form>
+  
+    </section>
+  </main>
+
+  <footer></footer>
+</body>
+</html>
