@@ -1,58 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Amal</title>
-  <meta name="description" content="Learn about Amal's background and skills">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Amal | Cybersecurity Protector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="index.html" data-nav-link>Home</a></li>
-        <li><a href="about.html" data-nav-link class="active">About</a></li>
-        <li><a href="experience.html" data-nav-link>Experience</a></li>
-        <li><a href="projects.html" data-nav-link>Projects</a></li>
-        <li><a href="testimonials.html" data-nav-link>Testimonials</a></li>
-        <li><a href="contact.html" data-nav-link>Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about" class="about-section" data-animate="fade-up">
-      <h1 class="section-header">About Me</h1>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Hello!I’m Amal  a 20-year-old first-year Cyber Security student at Bath Spa University, RAK, 
-            with a keen interest to computers and problem-solving.Apart from my Educational aspect im somone who has a passion for boxing and adventure.
-            I’m passionate about learning continuously, exploring new tools, and improving my skills to build better digital experiences. 
-            Outside of tech, I’m curious and open-minded, always eager to take on new challenges and grow my self.
-            Feel free to explore my work and connect with me. im excited to collaborate and learn new things from everyone
-
- .</p>
-          
-          <div class="skills-section" data-animate="fade-up" style="--delay: 0.2s">
-            <h2>My Skills</h2>
-            <ul class="skills-list">
-              <li>Web development</li>
-              <li>Adaptability</li>
-              <li>Teamwork & Leadership</li>
-              <li>Problem-Solving</li>
-              <li>Scripting with Python</li>
-            </ul>
-          </div>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"><span></span></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="project.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-      </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Journey in Cybersecurity</h2>
+                <p class="section-subtitle">From sci-fi fascination to digital defense</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="profile-frame">
+                        <img src="assests/about-profile.jpg" alt="Amal - Cybersecurity Student">
+                        <div class="frame-decoration"></div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-bio">
+                        <h3>Hello, I'm Amal</h3>
+                        <p>As a first-year Cybersecurity student at BathSpa University RAK, I'm turning my childhood fascination with technology into a mission to protect digital spaces.</p>
+                        
+                        <div class="bio-highlight">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Growing up watching sci-fi, I was amazed by technology's potential - until I realized its vulnerabilities. Now I bridge that gap by securing systems instead of just admiring them.</p>
+                        </div>
+                    </div>
+
+                    <div class="hobbies-section">
+                        <h4>Beyond Cybersecurity</h4>
+                        <div class="hobbies-grid">
+                            <div class="hobby-card">
+                                <div class="hobby-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="hobby-details">
+                                    <h5>Avid Reader</h5>
+                                    <p>Constantly expanding my knowledge through cybersecurity literature and technical journals</p>
+                                </div>
+                            </div>
+                            
+                            <div class="hobby-card">
+                                <div class="hobby-icon">
+                                    <i class="fas fa-boxing-glove"></i>
+                                </div>
+                                <div class="hobby-details">
+                                    <h5>Competitive Boxer</h5>
+                                    <p>Training in the ring teaches me discipline and strategic thinking that applies directly to cybersecurity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-statement">
+                <div class="mission-content">
+                    <i class="fas fa-shield-alt mission-icon"></i>
+                    <h3>My Mission</h3>
+                    <p>To develop cutting-edge security solutions while educating my community about digital safety - because cybersecurity isn't just about technology, it's about protecting people.</p>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <!-- Consistent footer -->
-  </footer>
-
-  <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
