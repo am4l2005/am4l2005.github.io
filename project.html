@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Project Animation */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .project-showcase {
+            animation: slideUp 1s ease-out forwards;
+        }
+        
+        .certificate-card {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .certificate-card:hover {
+            transform: translateY(-10px) rotateY(10deg);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2) !important;
+        }
+        
+        /* Ensure all images load properly */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<header class="main-header">
+    <div class="container">
+        <div class="logo"></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="project.html" class="nav-link">Project</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+    <main>
+        <section class="project-section">
+            <div class="container">
+                <h2 class="section-title">My Portfolio Project</h2>
+                <div class="project-showcase">
+                    <div class="project-details">
+                        <h3>Portfolio Website</h3>
+                        <p>This responsive portfolio website showcases my skills and projects with modern animations and clean design. Built with:</p>
+                        <ul class="tech-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript</li>
+                            <li>CSS Animations & Transitions</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="#" class="btn primary-btn">Live Demo</a>
+                            <a href="#" class="btn secondary-btn">View Code</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assests/project-screenshot.jpg" alt="Portfolio Screenshot">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="certificates-section">
+            <div class="container">
+                <h2 class="section-title">My Certifications</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <img src="assests/cert1.jpg" alt="Introduction to HTML">
+                        <div class="certificate-info">
+                            <h3>HTML</h3>
+                            <p>Issued by: SOLO LEARN</p>
+                            <p>Date: April 2025</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="assests/cert2.png" alt="Introduction to cyber security">
+                        <div class="certificate-info">
+                            <h3>CYBER SECURITY</h3>
+                            <p>Issued by: CISCO ACADEMY</p>
+                            <p>Date: november 2024</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="assests/cert3.png" alt="Networking basics">
+                        <div class="certificate-info">
+                            <h3>NETWORK</h3>
+                            <p>Issued by: CISCO ACADEMY</p>
+                            <p>Date: jan 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
